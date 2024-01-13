@@ -1,5 +1,5 @@
-import mongoose {  Schema} from "mongoose";
-
+import mongoose ,{  Schema} from "mongoose";
+import bcrypt from "bcrypt";
 const userSchema = new Schema(
     {
         username:{
@@ -37,7 +37,7 @@ const userSchema = new Schema(
             }
         ],
         password:{
-            type:String;
+            type:String,
             required:[true,'Password is required']
         },
         refreshToken:{

@@ -31,10 +31,6 @@ const videoSchema = new Schema(
             type:Boolean,
             default:true
         },
-        videoFile:{
-            type:String,
-            required:true
-        },
         owner:{
             type:Schema.Types.ObjectId,
             ref:"User"
